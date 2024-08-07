@@ -20,24 +20,13 @@ CREATE TABLE `Address` (
 CREATE TABLE `Member_Hobby` (
 	`Member_Hobby_PK`	varchar(30)	NOT NULL,
 	`Members_FK`	varchar(30)	NOT NULL,
-	`Hobby_FK`	varchar(30)	NOT NULL,
-	`Name`	varchar(30)	NULL,
-	`Hobby`	varchar(200)	NULL,
-	`Age`	varchar(30)	NULL,
-	`Gender`	varchar(30)	NULL,
-	`Tell`	varchar(30)	NULL,
-	`Email`	varchar(200)	NULL
+	`Hobby_FK`	varchar(30)	NOT NULL
 );
 
 CREATE TABLE `Member_Address` (
 	`Member_Address_PK`	varchar(30)	NOT NULL,
 	`Members_FK`	varchar(30)	NOT NULL,
-	`Address_FK`	varchar(30)	NOT NULL,
-	`Name`	varchar(30)	NULL,
-	`Age`	varchar(30)	NULL,
-	`Address`	varchar(200)	NULL,
-	`Tell`	varchar(30)	NULL,
-	`Email`	varchar(200)	NULL
+	`Address_FK`	varchar(30)	NOT NULL
 );
 
 ALTER TABLE `Members` ADD CONSTRAINT `PK_MEMBERS` PRIMARY KEY (
